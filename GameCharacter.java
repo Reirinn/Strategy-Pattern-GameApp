@@ -7,29 +7,14 @@ public class GameCharacter {
     Knight knight = new Knight();
     Archer archer = new Archer();
 
-    public GameCharacter(String character, String string){
+    public GameCharacter(String character, Skill skill){
         this.character = character;
         this.skill = skill;
     }
 
     public String showChara(){
-        if (character.equals("Knight"))
-        { 
-         return "Your character is " + character + " and you choose to " + knight.attack();
-        }
-
-        else if (character.equals("Wizard")){
-        return "Your character is " + character + " and you choose to " + wizard.attack();
-        }
-
-        else if (character.equals("Archer")){
-            return "Your character is " + character + " and you choose to " + archer.attack();
-            }
-        
-        return "error";
+        return "Your character is " + character; 
     }
 
-    public String showSkill(){
-        
-    }
+    
 }

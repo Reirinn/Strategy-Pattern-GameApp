@@ -1,6 +1,5 @@
 public class Knight implements Skill{
 
-
     public String attack(){
         String skillAttack = new String();
         skillAttack = "Knight attacks with a sword!\n";

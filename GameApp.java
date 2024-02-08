@@ -14,14 +14,14 @@ public class GameApp{
             int cSkill = input.nextInt();
             switch (cSkill) {
                 case 1:
-                    GameCharacter gc = new GameCharacter("Knight" , new Knight().attack());
+                    GameCharacter gc = new GameCharacter("Knight" , new Knight());
                     attri = "attack"; 
-                    System.out.println(gc.showChara());
+                    System.out.println(gc.showChara() + "\n" + new Knight().attack());
                     break;
                 case 2:  
-                    GameCharacter gcs = new GameCharacter("Knight" , new Knight().defend()); 
+                    GameCharacter gcs = new GameCharacter("Knight" , new Knight()); 
                     attri = "defend";
-                    System.out.println(gcs.showChara());
+                    System.out.println(gcs.showChara()+ "\n" + new Knight().defend());
                     break;  
                 default:
                     System.out.println("Input Error");
@@ -34,14 +34,14 @@ public class GameApp{
                 int dSkill = input.nextInt();
                 switch (dSkill) {
                     case 1:
-                    GameCharacter gc = new GameCharacter("Wizard" , new Wizard().attack());
+                    GameCharacter gc = new GameCharacter("Wizard" , new Wizard());
                     attri = "attack";
-                    System.out.println(gc.showChara());
+                    System.out.println(gc.showChara()+ "\n" + new Wizard().attack());
                         break;
                     case 2:  
-                    GameCharacter gcs = new GameCharacter("Wizard" , new Wizard().defend());   
+                    GameCharacter gcs = new GameCharacter("Wizard" , new Wizard());   
                     attri = "defend";
-                    System.out.println(gcs.showChara());
+                    System.out.println(gcs.showChara()+ "\n" + new Wizard().attack());
                         break;
                     default:
                         System.out.println("Input Error");
@@ -54,14 +54,14 @@ public class GameApp{
                     int rSkill = input.nextInt();
                     switch (rSkill) {
                         case 1:
-                        GameCharacter gc = new GameCharacter("Archer" , new Archer().attack());
+                        GameCharacter gc = new GameCharacter("Archer" , new Archer());
                         attri = "attack";
-                        System.out.println(gc.showChara());
+                        System.out.println(gc.showChara()+ "\n" + new Archer().attack());
                             break;
                         case 2:  
-                        GameCharacter gcs = new GameCharacter("Archer" , new Archer().defend());  
+                        GameCharacter gcs = new GameCharacter("Archer" , new Archer());  
                         attri = "defend";
-                        System.out.println(gcs.showChara());
+                        System.out.println(gcs.showChara()+ "\n" + new Archer().attack());
                             break;
                         default:
                             System.out.println("Input Error");
