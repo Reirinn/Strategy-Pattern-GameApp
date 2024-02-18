@@ -53,3 +53,6 @@ public class Character {
 
 
 # Class Diagram
+
+![Blank diagram (1)](https://github.com/Reirinn/Strategy-Pattern-GameApp/assets/142465054/c2cc1799-1a1e-4367-987c-f1e1a0cce786)
+
